@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>2bytes</title>
+</head>
+<body>
+<div class="section">
+	<div class="wrapper">
+		<div class="header">
+			<a href="#" class="logo">
+				<img src="images/logo.png">
+			</a>
+			<ul class="navigation">
+				<li>
+					<a href="home" class="nav-link">home</a>
+				</li>	
+				<li>
+					<a href="about-us" class="nav-link">about us</a>
+				</li>	
+				<li>
+					<a href="jobs" class="nav-link">jobs</a>
+				</li>
+				<li>
+					<a href="clients" class="nav-link">clients</a>
+				</li>
+				<li>
+					<a href="employers" class="nav-link">employers</a>
+				</li>
+				<li>
+					<a href="contact-us" class="nav-link">contact us</a>
+				</li>
+			</ul>
+		</div>
+		<form method="post" action="job_search.php" name="job-search-form" class="job-search-form">
+			<h2 class="job-search-form-header">I'm looking for...</h2>
+			<div class="job-search-form-col-1">
+				<input type="text" name="job-description-input" class="job-description-input input-text" placeholder="Enter a Job Description">
+				<input type="checkbox" name="job-schedule-fulltime" class="checkbox" id="job-schedule-fulltime">
+				<label for="job-schedule-fulltime" class="label">Full time</label>
+				<input type="checkbox" name="job-schedule-parttime" class="checkbox" id="job-schedule-parttime">
+				<label for="job-schedule-parttime" class="label">Part Time / Casual / Freelance</label>
+				<select class="user-location" name="user-location">
+					<option value="" disabled selected>Select your Location</option>
+					<option value="ukraine">Ukraine</option>
+					<option value="georgia">Georgia</option>
+					<option value="kazakhstan">Kazakhstan</option>
+				</select>
+			</div>
+			<div class="job-search-form-col-2">
+				<input type="submit" value="Search" name="job-search-form-submit-button" class="job-search-form-submit-button">
+			</div>
+		</form>
+	</div>
+</div>
+
+
+</body>
+</html>
