@@ -5,7 +5,7 @@
 <title>2bytes</title>
 </head>
 <body>
-<div class="section">
+<div class="section home" id="home">
 	<div class="wrapper">
 		<div class="header">
 			<a href="#" class="logo">
@@ -14,21 +14,12 @@
 			<ul class="navigation">
 				<li>
 					<a href="home" class="nav-link">home</a>
-				</li>	
+				</li>
 				<li>
 					<a href="about-us" class="nav-link">about us</a>
 				</li>	
 				<li>
-					<a href="jobs" class="nav-link">jobs</a>
-				</li>
-				<li>
-					<a href="clients" class="nav-link">clients</a>
-				</li>
-				<li>
-					<a href="employers" class="nav-link">employers</a>
-				</li>
-				<li>
-					<a href="contact-us" class="nav-link">contact us</a>
+					<a href="subscribe" class="nav-link">subscribe</a>
 				</li>
 			</ul>
 		</div>
@@ -53,7 +44,24 @@
 		</form>
 	</div>
 </div>
-
-
+<div class="section about-us" id="about-us">
+	<div class="wrapper">
+		<h4>We’re leaders in</h4>
+		<h3>Creative Digital Recruitment</h3>
+		<p>Based in Surry Hills, the creative hub of Sydney we are surroun</p>
+		<a href="#" class="about-us-button">find out more about us!</a>
+	</div>
+</div>
+<div class="section subscribe" id="subscribe">
+	<div class="wrapper">
+		<form method="post" action="subscribe.php" name="subscribe-form" class="subscribe-form">
+			<h3>Subscribe to our Job Seeker Mailing List</h3>
+			<div class="subscribe-form-input-wrapper">
+				<input type="email" name="subscribe-form-user-email" class="subscribe-form-user-email" placeholder="Enter Your Email Address">
+				<input type="submit" name="subscribe-form-submit-button" class="subscribe-form-submit-button">
+			</div>
+		</form>
+	</div>
+</div>
 </body>
 </html>
