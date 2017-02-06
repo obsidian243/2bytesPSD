@@ -28,6 +28,10 @@ select {
 	margin: 0;
 }
 
+.subscribe {
+	margin: 0;
+}
+
 .wrapper {
 	margin: 0 auto;
 	width: 960px;
@@ -188,4 +192,42 @@ select {
 	display: inline-block;
 	padding: 21px 38px;
 }
+.subscribe {
+	background-color: #131c25;
+	padding: 165px 0;
+	min-height: 445px;
+}
 
+.subscribe-form {
+	width: 365px;
+	margin: 0 auto;
+}
+
+.subscribe-form h3 {
+	text-align: center;
+	font-size: 18px;
+	color: #7b8085;
+}
+
+.subscribe-form-user-email {
+	background-color: #131c25;
+	width: 360px;
+	height: 54px;
+	font-size: 15px;
+	font-style: italic;
+	color: #7b8085;
+	border: 2px solid #4acaff;
+	border-radius: 10px;
+	display: inline-block;
+	margin-top: 30px;
+	padding-left: 20px;
+}
+
+.subscribe-form-submit-button {
+	background: url(images/icon-mail-white.png) right no-repeat;
+	margin: 50px -90px;
+	padding:0;
+	border: 0;
+	cursor: pointer; 
+	position: absolute;
+}
