@@ -4,14 +4,11 @@
 }
 
 body {
-	font-size: 14px;
+	font: 14px Ariel, Helvetica, sans-serif;
 	margin: 0;
 }
 
-h3 {
-	margin: 0;
-}
-
+h3,
 h4 {
 	margin: 0;
 }
@@ -19,6 +16,10 @@ h4 {
 ul {
 	list-style-type: none;
 	padding: 0;
+	margin: 0;
+}
+
+p {
 	margin: 0;
 }
 
@@ -32,7 +33,22 @@ select {
 	margin: 0;
 }
 
+.section {
+	position: relative;
+	margin-bottom: 7px;
+}
+
+.section::after {
+	background: url(images/separate-line.png) repeat-x;
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 7px;
+	top: 100%;
+}
+
 .wrapper {
+	overflow: hidden;
 	margin: 0 auto;
 	width: 960px;
 }
@@ -149,6 +165,10 @@ select {
 	min-height: 590px;
 }
 
+.about-us .wrapper {
+	width: 710px;
+}
+
 .about-us h4 {
 	font-size: 30px;
 	color: #585858;
@@ -161,20 +181,22 @@ select {
 	font-size: 45px;
 	color: #585858;
 	text-align: center;
-	margin-bottom: 102px;
+	margin-bottom: 53px;
+}
+.about-us h3::after {
+	background: #4acaff;
+	content: "";
+	display: block;
+	width: 138px;
+	height: 5px;
+	margin: 43px auto 0;
 }
 
-.about-us-top {
+.about-us p {
 	font-size: 18px;
 	color: #585858;
 	text-align: center;
-	margin-bottom: 0;
-}
-.about-us-bottom {
-	font-size: 18px;
-	color: #585858;
-	text-align: center;
-	margin: 0 auto 60px auto;
+	margin-bottom: 80px;
 }
 
 .about-us-bottom-block {
@@ -203,31 +225,102 @@ select {
 	margin: 0 auto;
 }
 
-.subscribe-form h3 {
+.subscribe-form-header {
 	text-align: center;
 	font-size: 18px;
 	color: #7b8085;
+	margin-bottom: 30px;
+}
+
+.subscribe-form-input-wrapper {
+	position: relative;
 }
 
 .subscribe-form-user-email {
 	background-color: #131c25;
-	width: 360px;
+	width: 100%;
 	height: 54px;
 	font-size: 15px;
-	font-style: italic;
-	color: #7b8085;
+	color: #ffffff;
 	border: 2px solid #4acaff;
 	border-radius: 10px;
 	display: inline-block;
-	margin-top: 30px;
 	padding-left: 20px;
+	padding-right: 51px;
+	outline: none;
+}
+
+.subscribe-form-user-email::-webkit-input-placeholder {
+	color: #7b8085;
+	font-style: italic;
 }
 
 .subscribe-form-submit-button {
-	background: url(images/icon-mail-white.png) right no-repeat;
-	margin: 50px -90px;
-	padding:0;
-	border: 0;
+	background: url(images/icon-mail-white.png) center center no-repeat;
+	padding: 0;
 	cursor: pointer; 
 	position: absolute;
+	right: 0;
+	top: 0;
+	width: 62px;
+	height: 51px;
+	font-size: 0;
+	outline: none;
+}
+
+.footer {
+	background-color: #f5f5f5;
+	padding: 70px 0;
+}
+
+.company-email-wrapper {
+	margin-bottom: 25px;
+}
+
+.company-email-wrapper a {
+	background: url(images/icon-mail-blue.png) left center no-repeat;
+	font-weight: bold;
+	font-size: 14px;
+	text-decoration: none;
+	color: #939393;
+	padding-left: 35px;
+	display: inline-block;
+}
+
+.copyright-text {
+	font-size: 14px;
+	color: #939393;
+	padding-left: 0;
+	float: left;
+}
+
+.copyright-text a {
+	font-size: 14px;
+	text-decoration: none;
+	font-weight: bold;
+	color: #939393;
+}
+
+.social-links {
+	float: right;
+}
+
+.social-links li {
+	float: left;
+}
+
+.social-links a {
+	display: inline-block;
+}
+
+.twitter {
+	background-image: url(images/twitter-link.png);
+	width: 96px;
+	height: 20px;
+}
+
+.facebook {
+	background-image: url(images/facbook-link.png);
+	width: 96px;
+	height: 20px;
 }
